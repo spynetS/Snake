@@ -59,8 +59,6 @@ public class DisplayGraphics extends JPanel {
                 }
             }
         });
-
-
     }
     private void addApple()
     {
@@ -109,10 +107,10 @@ public class DisplayGraphics extends JPanel {
         gameLoop.isGameRunning =false;
         System.out.println("Dead");
         JButton button = new JButton("RESTART");
-        button.setForeground(new Color(255,255,255));
+        button.setBackground(new Color(255,255,255));
         add(button);
-        JButton quit = new JButton("Settings");
-        button.setForeground(new Color(255,255,255));
+        JButton quit = new JButton("SETTINGS");
+        quit.setBackground(new Color(255,255,255));
         add(quit);
         quit.addActionListener(new ActionListener() {
             @Override

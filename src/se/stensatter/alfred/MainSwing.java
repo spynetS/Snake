@@ -24,6 +24,7 @@ public class MainSwing extends JFrame {
     public void NewGame()
     {
         JLabel SizeLabel = new JLabel("SIZE");
+        JPanel GamePanel = new JPanel();
         panel1.add(SizeLabel);
         JTextField size = new JTextField();
         panel1.add(size);
@@ -53,7 +54,6 @@ public class MainSwing extends JFrame {
                 m.pixelSize = Integer.parseInt(size.getText())*10;
                 m.speed = getSpeed(speed);
                 m.Start();
-
                 panel1.add(m);
                 add(panel1);
                 m.requestFocusInWindow();
